@@ -1,0 +1,149 @@
+html { 
+    background: url(./cover.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+
+h1 {
+    text-align: center;
+    color: #ff6f61;
+}
+
+#adicionarCombate {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#adicionarCombate:hover {
+    background-color: #ff4a3d;
+}
+
+.combates-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os containers */
+    justify-content: center; /* Centraliza os containers horizontalmente */
+}
+
+.combate-container {
+    background-color: #3a3a4f;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 23%; /* Largura fixa de 25% (com gap de 20px) */
+    min-width: 250px; /* Largura mínima para cada container */
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+    display: flex;
+}
+
+.combate-content {
+    flex: 1; /* Ocupa o espaço restante à esquerda */
+    padding-right: 15px; /* Espaço entre o conteúdo e a sidebar */
+    background-color: #3a3a4f;
+}
+
+.sidebar {
+    width: 50px; /* Largura fixa da sidebar */
+    background-color: #3a3a4f; /* Cor de fundo da sidebar */
+    box-sizing: border-box; /* Garante que padding não afete a largura */
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin: 0 0 10px;
+    font-size: 10px;
+    color: #ff6f61;
+    text-align: center;
+}
+
+.sidebar label {
+    display: block;
+    margin: 5px 0;
+    font-size: 6px;
+    color: #a1a1a1;
+}
+
+.sidebar input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.combate-container label {
+    display: block;
+    margin: 2px 0 2px;
+    font-weight: bold;
+    color: #a1a1a1;
+    font-size: 12px;
+}
+
+.combate-container input,
+.combate-container select {
+    width: 85%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #2a2a40;
+    color: #ffffff;
+}
+
+.combate-container button {
+   
+    background-color: #ff6f61;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.combate-container button:hover {
+    background-color: #ff4a3d;
+}
+
+.resultado {
+
+    width:100%;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ff6f61;
+    display: flex;
+}
+
+#fecharContainer  {
+    height: fit-content;
+    width: fit-content;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 46px;
+    margin-top: 0;
+    z-index: 2;
+    border-radius: 50%;
+    
+}
+
+#fecharContainer:hover {
+    background-color: darkred;
+}
